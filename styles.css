@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-padding-top: 60px;
+    scroll-behavior: smooth;
+}
+body {
+    color: white;
+    background-color: black;
+    margin: 0;
+    font-family: sans-serif;
+}
+nav, ul {
+    display: flex;
+    list-style-type: none;
+    padding-right: 20px;
+}
+nav {
+    box-sizing: content-box;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    height: 40px;
+    padding-bottom: 5px;
+    
+}
+.nav-name {
+    font-size: 20px;
+   padding-left: 10px;
+}
+.nav-links {
+    margin-right: 0;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.nav-links a:hover {
+    color:rgb(3, 150, 3);
+}
+.home {
+    min-height: 100vh;
+    padding: 60px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:
+        linear-gradient(
+            to bottom,
+            transparent 90%,
+            black 100%
+        ),
+        url("home-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-name {
+    font-size: 80px;
+    margin-bottom: 5px;
+}
+.home-par {
+    font-size: 20px;
+    color: rgb(3, 150, 3);
+    width: 450px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.more {
+    color: white;
+    background-color: rgb(3, 150, 3);
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    margin: 30px;
+    width: 150px;
+    font-size: 13px;
+    text-decoration: none;
+}
+.more:hover {
+    background-color: rgb(23, 221, 23);
+}
+.view-button {
+    display: inline-block;
+    background-color: rgb(3, 150, 3);
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 150px;
+    font-size: 13px;
+    text-align: center;
+}
+.view-button:hover {
+    background-color: rgb(23, 221, 23);
+}
+.about-me {
+    color: rgb(238, 231, 231);
+    padding: 10px;
+    width: 50%;
+    margin-left: auto;
+}
+.about-me h2 {
+    font-size: 30px;
+}
+.about-me .par-1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.about-me .par-5 {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.about-me p {
+    font-size: 16px;
+}
+.my-skills {
+    padding: 20px;
+}
+.my-skills h2 {
+    text-align: center;
+}
+.skills {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+.skills section {
+    background-color: rgb(3, 150, 3);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.contact {
+    padding: 100px 50px 50px;
+    min-height: 100vh;
+}
+
+.contact-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-heading h2 {
+    margin-top: 0;
+    color: rgb(3, 150, 3);
+    font-size: 35px;
+}
+.contact-heading p {
+    font-size: 14px;
+    color: rgb(221, 218, 218);
+}
+.contact-body {
+    margin-top: 50px;
+    width: 50%;
+}
+.contact-body p {
+    font-size: 14px;
+    color: rgb(221, 218, 218);
+}
+.contact-body hr {
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color: rgb(3, 150, 3);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+address a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+    padding: 10px;
+    width: fit-content;
+}
+address i {
+    padding-right: 10px;
+}
+.contact-address a:hover {
+    color: rgb(3, 150, 3);
+}
+.fa-envelope, .fa-linkedin, .fa-github {
+    color: rgb(3, 150, 3);
+}
+
+
+.projects-page {
+    padding: 70px 50px 50px;
+    min-height: 100vh;
+}
+.projects-header {
+    margin-top: 0;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.projects-header h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.projects-header hr {
+    width: 10%;
+    height: 1px;
+    background-color: rgb(3, 150, 3);
+    border: none;
+    margin-bottom: 25px;
+}
+.projects-header p {
+    color: rgb(221, 218, 218);
+}
+.my-projects {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(37, 35, 35);
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    min-width: 0;
+}
+.projects-link {
+    text-decoration: none;
+    color: rgb(3, 150, 3);
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: auto;
+    align-self: flex-start;
+}
+.projects-link:hover {
+    color: rgb(23, 221, 23);
+}
+.personal-portfolio, .task-manager, .tour-booking {
+    width: 100%;
+    display: block;
+}
+.projects h3 {
+    color: rgb(3, 150, 3);
+    padding: 10px;
+    margin-bottom: 0;
+}
+.projects p {
+    color: rgb(221, 218, 218);
+    padding: 10px;
+    margin-top: 0;
+}
+
+.contact-link {
+    text-decoration: underline;
+    text-decoration-color: rgb(3, 150, 3);
+    text-underline-offset: 5px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    float: inline-end;
+    font-weight: bold;
+}
+.contact-link:hover {
+    color: rgb(3, 150, 3);
+}
+
+
+@media (max-width: 900px) {
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .about,
+    .projects-page,
+    .contact {
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 768px) {
+    .my-projects {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .projects {
+        width: 100%;
+        flex: none;
+    }
+}
